@@ -1,4 +1,4 @@
-CFLAGS = -lpthread -Wall
+CFLAGS = -pthread -Wall
 pwnginx: functions.c
 
 clean:

